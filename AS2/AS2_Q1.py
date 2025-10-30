@@ -3,10 +3,11 @@ def format_output(lst):
     for element in lst:
         if row == 10:
             print(element)
-            row = 0
+            row = 1
         else:
             print(element,end=" ")
             row += 1
+    #print("\b")
 
 def reverse_number(num):
     num = int(str(num)[::-1])
