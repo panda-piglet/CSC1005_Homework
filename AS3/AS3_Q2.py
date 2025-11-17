@@ -67,12 +67,15 @@ def test():
         Num1 = ComplexNumber(num1)
         Num2 = ComplexNumber(num2)
     except ValueError:
-        print()
+        print("This is not a complex number")
         return
     print(f"Addition: {Num1 + Num2}" )
     print(f"Subtraction: {Num1 - Num2}")
     print(f"Multiplication: {Num1 * Num2}")
-    print(f"Division: {Num1 / Num2}")
+    try:
+        print(f"Division: {Num1 / Num2}")
+    except ZeroDivisionError:
+        print("can not divide by zero")
 
 if __name__ == "__main__":
     test()
