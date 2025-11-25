@@ -1,7 +1,7 @@
 def p_complex(complexnumber):
         result = []
         tmp = 0
-        for index in range(0,len(complexnumber)):
+        for index in range(1,len(complexnumber)):
             if complexnumber [index] == "+" or complexnumber [index] == "-":
                 result.append(complexnumber[tmp:index])
                 tmp = index
