@@ -10,7 +10,7 @@ class tree(object):
         self.tree = tree"""
 
 
-def DFS_Search(tree,t):
+def BFS_Search(tree,t):
     queue=[t]
     depth = len(tree)
     while queue:
@@ -23,7 +23,8 @@ def DFS_Search(tree,t):
 def test():
     tree = [0,1,2,3,4,5,6]
     t = 2
-    DFS_Search(tree,t)
+    BFS_Search(tree,t)
 
 if __name__ == "__main__":
     test()
+
